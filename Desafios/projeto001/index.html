@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Juros simples e compostos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculando Juros simples e compostos</h1>
+    <section>
+        <div class="jsimples">
+            <h2>Juros simples</h2>
+            <p>
+                Qual o valor inicial?
+            </p>
+            <input type="number" name="txtnumini1" id="txtnumini1">
+            <p>
+                Quantos meses?
+            </p>
+            <input type="number" name="txtmeses1" id="txtmeses1">
+            <p>
+                Qual a porcentagem de juros?
+            </p>
+            <input type="number" name="txtporcento1" id="txtporcento1">%
+            <br>
+            <input type="button" value="Calcular" id="calcular" class= "but-calc" onclick="calcSimples()">
+            <div class="ressimples" id="ressimples">Resposta</div>
+        </div>
+        
+        <div class="jcomposto">
+            <h2>Juros composto</h2>
+            <p>
+                Qual o valor inicial?
+            </p>
+            <input type="number" name="txtnumini2" id="txtnumini2">
+            <p>
+                Quantos meses?
+            </p>
+            <input type="number" name="txtmeses2" id="txtmeses2">
+            <p>
+                Qual a porcentagem de juros?
+            </p>
+            <input type="number" name="txtporcento2" id="txtporcento2">%
+            <br>
+            <input type="button" value="Calcular" class="but-calc1" onclick="composto()">
+            <div class="rescomp">Resposta</div>
+        </div>
+    </section>
+    <footer>
+        <p > &copy; <a id="link" target="_blank" href="https://arielgds.github.io/">ArielGuedes</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

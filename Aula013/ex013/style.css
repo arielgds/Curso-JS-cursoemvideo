@@ -1,0 +1,25 @@
+body{
+    background: rgb(62, 126, 96);
+    font: 15pt "Helvetica Neue",Helvetica,Arial;
+}
+header{
+    margin: 1px;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+footer{
+    margin: 1px;
+}
+div {
+    text-align: center;
+}
+header, footer{
+    text-align: center;
+    color: aliceblue;
+
+}

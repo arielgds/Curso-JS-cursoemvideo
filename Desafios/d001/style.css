@@ -1,0 +1,27 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    padding: 20px;
+    margin: 5px;
+    border-radius: 7px;
+    color: random;
+}
+#btn1:active{
+    color: rgb(158, 46, 46);
+    background-color: rgba(0, 0, 0, 0.753);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.425);
+    transition: .3s;
+}
+#btn2:active{
+    color: rgb(46, 158, 83);
+    background-color: rgba(0, 0, 0, 0.753);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.425);
+    transition: .3s;
+}
+#btn3:active{
+    color: rgb(46, 126, 158);
+    background-color: rgba(0, 0, 0, 0.753);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.425);
+    transition: .3s;
+}

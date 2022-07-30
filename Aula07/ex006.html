@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com DOM</title>
+    <style>
+        #area{
+            font: normal 20px arial;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 180px;
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+        <!-- ativando o JS pelo HTML tem que colocar isso junto a tag: onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()" para que dê para puxar o evento no JS ou se nao fazedr tudo pelo JS -->
+        Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById("area");('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('onmouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor= 'orange'
+        }
+        function entrou(){
+            a.innerText = 'Entrou!'
+            a.style.backgroundColor= 'green'
+        }
+        function saiu(){
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor= 'aqua'
+
+        }
+    </script>
+</body>
+</html>

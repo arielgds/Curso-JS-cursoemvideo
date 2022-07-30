@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Francisco Pinto</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        input{
+            margin: 5px;
+        }
+        #somar{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fazendo a média dos alunos</h1>
+    <h2>Qual o nome do Aluno?</h2>
+    <input type="text" name="txtname" id="txtname">
+    <br>
+    <div class="notas">
+        <p>Nota do primeiro bimestre:</p>
+        <input type="number" name="txtnota1" id='txtn1'>
+        <br>
+        <p>Nota do segundo bimestre:</p>
+        <input type="number" name="txtnota2" id='txtn2'>
+        <br>
+        <p>Nota do terceiro bimestre:</p>
+        <input type="number" name="txtnota3" id='txtn3'>
+        <br>
+        <p>Nota do quarto bimestre:</p>
+        <input type="number" name="txtnota4" id='txtn4'>
+        <br>
+        <input type="button" value="SOMAR" onclick='somar()'>
+        <div id="res">Resultado</div>
+
+    </div>
+    <script>
+
+        function somar() {
+            var name = document.getElementById('txtname')
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var tn3 = document.getElementById('txtn3')
+            var tn4 = document.getElementById('txtn4')
+            var res = document.getElementById('res')
+            var nota1 = Number(tn1.value)
+            var nota2 = Number(tn2.value)
+            var nota3 = Number(tn3.value)
+            var nota4 = Number(tn4.value)
+            var s1 = (nota1 + nota2 + nota3 + nota4)/4
+            res.InnerHTML = `<p>A média do aluno ${name} foi de ${s1}.</p>`
+        }
+    </script>
+</body>
+</html>
